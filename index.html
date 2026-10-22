@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Bisnis Tralis - Development Portal</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50%' y='68%' font-size='56' font-family='sans-serif' font-weight='bold' fill='%2338bdf8' text-anchor='middle'>T</text></svg>">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: rgba(22, 29, 47, 0.75);
+      --card-border: rgba(56, 189, 248, 0.2);
+      --primary: #38bdf8;
+      --primary-hover: #0ea5e9;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at top right, #1e293b, #090d16 60%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .container {
+      max-width: 620px;
+      width: 100%;
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6), 0 0 40px rgba(56, 189, 248, 0.1);
+      text-align: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--primary);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #22c55e;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+      background: linear-gradient(to right, #ffffff, #94a3b8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+    .code-box {
+      background: #0b1120;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 14px 18px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 14px;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--primary);
+      color: #04111d;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(56, 189, 248, 0.35);
+    }
+    .btn:hover {
+      background: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
+    }
+    .info {
+      margin-top: 24px;
+      font-size: 13px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">
+      <span class="pulse-dot"></span> Next.js 14 App Router Ready
+    </div>
+    <h1>Website Bisnis Tralis</h1>
+    <p>Aplikasi ini dibangun menggunakan Next.js. File HTML utama dikompilasi secara otomatis melalui <code>src/app/layout.tsx</code>.</p>
+    
+    <div class="code-box">
+      <span>$ npm run dev</span>
+      <span style="color: #64748b; font-size: 12px;">(Otomatis buka browser)</span>
+    </div>
+
+    <a href="http://localhost:3000" target="_blank" class="btn">
+      Buka http://localhost:3000 ↗
+    </a>
+
+    <div class="info">
+      Jalankan <code>npm run dev</code> atau <code>npm dev</code> di terminal. Browser akan otomatis terbuka ke localhost!
+    </div>
+  </div>
+</body>
+</html>
